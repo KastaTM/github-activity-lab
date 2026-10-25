@@ -1,0 +1,6 @@
+[
+  "python/cpython",
+  "pallets/flask",
+  "fastapi/fastapi",
+  "astral-sh/ruff"
+]

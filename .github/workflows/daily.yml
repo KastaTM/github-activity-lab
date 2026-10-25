@@ -1,0 +1,76 @@
+name: Open source daily snapshot
+
+on:
+  schedule:
+    - cron: '23 8 * * *'
+      timezone: 'Europe/Madrid'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: open-source-daily-snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout de rama principal
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: true
+
+      - name: Configurar Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Ejecutar pruebas antes de publicar
+        run: python -m unittest discover -s tests -v
+
+      - name: Obtener datos públicos reales
+        env:
+          GH_API_TOKEN: ${{ github.token }}
+        run: python src/monitor.py
+
+      - name: Publicar cambios (nunca commits vacíos)
+        shell: bash
+        env:
+          AUTO_AUTHOR_NAME: ${{ vars.AUTO_AUTHOR_NAME }}
+          AUTO_AUTHOR_EMAIL: ${{ vars.AUTO_AUTHOR_EMAIL }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          git add data/history.csv reports/summary.md reports/stars.svg reports/latest.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios: no se crea commit."
+            exit 0
+          fi
+
+          # El COMMITTER siempre será GitHub Actions (rastro auditable).
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          if [[ -n "$AUTO_AUTHOR_NAME" || -n "$AUTO_AUTHOR_EMAIL" ]]; then
+            if [[ -z "$AUTO_AUTHOR_NAME" || -z "$AUTO_AUTHOR_EMAIL" ]]; then
+              echo 'ERROR: define ambas variables de autor, o ninguna.' >&2
+              exit 1
+            fi
+            # OPCIONAL: atribución a quien creó/mantiene la automatización.
+            # Siempre declarado en README y en el propio commit.
+            git commit --author="$AUTO_AUTHOR_NAME <$AUTO_AUTHOR_EMAIL>" \
+              -m "data(auto): snapshot $(date -u +%F) [automated]" \
+              -m 'Generated-by: GitHub Actions' \
+              -m 'Disclosure: Automated data update, not manual coding activity.'
+          else
+            git commit \
+              -m "data(auto): snapshot $(date -u +%F) [automated]" \
+              -m 'Generated-by: GitHub Actions' \
+              -m 'Disclosure: Automated data update, not manual coding activity.'
+          fi
+          git pull --rebase origin "$DEFAULT_BRANCH"
+          git push origin "HEAD:$DEFAULT_BRANCH"
