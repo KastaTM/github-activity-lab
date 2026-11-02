@@ -31,3 +31,7 @@ date,repo,stars,forks,open_issues_and_prs
 2026-11-01,fastapi/fastapi,104528,10165,77
 2026-11-01,pallets/flask,75156,17253,4
 2026-11-01,python/cpython,77771,37143,9231
+2026-11-02,astral-sh/ruff,50393,2571,2258
+2026-11-02,fastapi/fastapi,104562,10179,60
+2026-11-02,pallets/flask,75164,17274,4
+2026-11-02,python/cpython,77794,37171,9229
