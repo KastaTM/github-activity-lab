@@ -1,22 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="432" viewBox="0 0 960 432" role="img" aria-label="Tendencias de estrellas en proyectos open source">
 <rect width="100%" height="100%" fill="#0d1117" rx="16"/>
 <text x="28" y="39" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#e6edf3">Open Source Radar</text>
-<text x="28" y="62" font-family="Arial,sans-serif" font-size="12" fill="#8b949e">Snapshots reales de GitHub · 2026-11-02</text>
+<text x="28" y="62" font-family="Arial,sans-serif" font-size="12" fill="#8b949e">Snapshots reales de GitHub · 2026-11-03</text>
 <text x="28" y="105" fill="#e6edf3" font-family="Arial,sans-serif" font-size="15">python/cpython</text>
-<text x="28" y="126" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">77,794 estrellas</text>
+<text x="28" y="126" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">77,803 estrellas</text>
 <line x1="335" y1="134" x2="905" y2="134" stroke="#30363d"/>
-<polyline points="335.0,108.4 406.2,104.3 477.5,101.8 548.8,112.8 620.0,108.7 691.2,126.0 762.5,114.0 833.8,105.2 905.0,98.0" fill="none" stroke="#58a6ff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="335.0,110.0 398.3,106.3 461.7,104.0 525.0,114.0 588.3,110.3 651.7,126.0 715.0,115.1 778.3,107.1 841.7,100.6 905.0,98.0" fill="none" stroke="#58a6ff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="28" y="183" fill="#e6edf3" font-family="Arial,sans-serif" font-size="15">pallets/flask</text>
-<text x="28" y="204" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">75,164 estrellas</text>
+<text x="28" y="204" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">74,940 estrellas</text>
 <line x1="335" y1="212" x2="905" y2="212" stroke="#30363d"/>
-<polyline points="335.0,191.8 406.2,184.6 477.5,182.8 548.8,204.0 620.0,203.1 691.2,203.9 762.5,195.9 833.8,176.9 905.0,176.0" fill="none" stroke="#3fb950" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="335.0,191.8 398.3,184.6 461.7,182.8 525.0,204.0 588.3,203.1 651.7,203.9 715.0,195.9 778.3,176.9 841.7,176.0 905.0,202.4" fill="none" stroke="#3fb950" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="28" y="261" fill="#e6edf3" font-family="Arial,sans-serif" font-size="15">fastapi/fastapi</text>
-<text x="28" y="282" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">104,562 estrellas</text>
+<text x="28" y="282" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">104,378 estrellas</text>
 <line x1="335" y1="290" x2="905" y2="290" stroke="#30363d"/>
-<polyline points="335.0,282.0 406.2,275.9 477.5,272.7 548.8,273.7 620.0,271.4 691.2,271.4 762.5,266.8 833.8,256.1 905.0,254.0" fill="none" stroke="#d2a8ff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="335.0,282.0 398.3,275.9 461.7,272.7 525.0,273.7 588.3,271.4 651.7,271.4 715.0,266.8 778.3,256.1 841.7,254.0 905.0,265.3" fill="none" stroke="#d2a8ff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="28" y="339" fill="#e6edf3" font-family="Arial,sans-serif" font-size="15">astral-sh/ruff</text>
-<text x="28" y="360" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">50,393 estrellas</text>
+<text x="28" y="360" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">50,406 estrellas</text>
 <line x1="335" y1="368" x2="905" y2="368" stroke="#30363d"/>
-<polyline points="335.0,360.0 406.2,353.2 477.5,348.9 548.8,345.1 620.0,342.8 691.2,344.6 762.5,340.1 833.8,335.6 905.0,332.0" fill="none" stroke="#f2cc60" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="335.0,360.0 398.3,353.9 461.7,350.0 525.0,346.5 588.3,344.5 651.7,346.1 715.0,342.0 778.3,337.9 841.7,334.7 905.0,332.0" fill="none" stroke="#f2cc60" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="28" y="415" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">Datos generados automáticamente; cada repositorio usa su propia escala vertical.</text>
 </svg>
