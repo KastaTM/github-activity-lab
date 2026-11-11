@@ -134,6 +134,25 @@ def build_svg(rows: list[dict[str, str]], targets: list[str], day: str) -> str:
     return "\n".join(parts)
 
 
+def build_deltas(rows: list[dict[str, str]], targets: list[str], day: str) -> str:
+    """Variaciones observadas frente al snapshot anterior de cada repositorio."""
+    metrics = FIELDS[2:]
+    repositories = []
+    for repo in targets:
+        history = [row for row in rows if row["repo"] == repo]
+        previous = history[-2] if len(history) > 1 else None
+        repositories.append({
+            "repo": repo,
+            "previous_date_utc": previous["date"] if previous else None,
+            "changes": {
+                metric: int(history[-1][metric]) - int(previous[metric]) if previous else None
+                for metric in metrics
+            },
+        })
+    return json.dumps({"date_utc": day, "automated": True, "repositories": repositories},
+                      indent=2, ensure_ascii=False) + "\n"
+
+
 def run(
     root: Path = ROOT,
     day: str | None = None,
@@ -170,6 +189,7 @@ def run(
         root / "reports/summary.md": build_summary(rows, targets, today),
         root / "reports/stars.svg": build_svg(rows, targets, today),
         root / "reports/latest.json": json.dumps(latest, indent=2, ensure_ascii=False) + "\n",
+        root / "reports/deltas.json": build_deltas(rows, targets, today),
     }
     for path, contents in outputs.items():
         path.parent.mkdir(parents=True, exist_ok=True)

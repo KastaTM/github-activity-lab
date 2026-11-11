@@ -32,6 +32,8 @@ class MonitorTests(unittest.TestCase):
         payload = json.loads((self.root / "reports/latest.json").read_text(encoding="utf-8"))
         self.assertTrue(payload["automated"])
         self.assertIn("<svg", (self.root / "reports/stars.svg").read_text(encoding="utf-8"))
+        deltas = json.loads((self.root / "reports/deltas.json").read_text(encoding="utf-8"))
+        self.assertEqual(deltas["repositories"][0]["changes"]["stars"], None)
 
     def test_subsequent_days_and_deltas(self):
         run(root=self.root, day="2026-10-25", collector=self.fake)
@@ -41,6 +43,22 @@ class MonitorTests(unittest.TestCase):
         summary = (self.root / "reports/summary.md").read_text(encoding="utf-8")
         self.assertIn("+49", summary)
         self.assertIn("+48", summary)
+        deltas = json.loads((self.root / "reports/deltas.json").read_text(encoding="utf-8"))
+        self.assertEqual([item["changes"]["stars"] for item in deltas["repositories"]], [49, 48])
+        latest = json.loads((self.root / "reports/latest.json").read_text(encoding="utf-8"))
+        self.assertEqual(deltas["date_utc"], latest["date_utc"])
+        self.assertEqual([item["repo"] for item in deltas["repositories"]],
+                         [item["repo"] for item in latest["repositories"]])
+        self.assertIn(latest["date_utc"], summary)
+        self.assertIn(latest["date_utc"], (self.root / "reports/stars.svg").read_text(encoding="utf-8"))
+
+    def test_stable_metrics_have_zero_deltas(self):
+        metrics = lambda repo, token: {"stars": 100, "forks": 20, "open_issues_and_prs": 3}
+        run(root=self.root, day="2026-10-25", collector=metrics)
+        run(root=self.root, day="2026-10-26", collector=metrics)
+        deltas = json.loads((self.root / "reports/deltas.json").read_text(encoding="utf-8"))
+        self.assertTrue(all(set(item["changes"].values()) == {0} for item in deltas["repositories"]))
+        self.assertIn("+0", (self.root / "reports/summary.md").read_text(encoding="utf-8"))
 
     def test_api_failure_writes_nothing(self):
         def fail(repo, token):
