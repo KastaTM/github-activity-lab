@@ -1,13 +1,13 @@
 # Open Source Radar — último snapshot
 
-**Fecha de observación (UTC): 2026-11-10** · Origen: [API pública de GitHub](https://docs.github.com/rest/repos/repos#get-a-repository).
+**Fecha de observación (UTC): 2026-11-11** · Origen: [API pública de GitHub](https://docs.github.com/rest/repos/repos#get-a-repository).
 
 | Repositorio | Estrellas | Variación vs. snapshot anterior | Forks | Issues + PRs abiertos |
 | --- | ---: | ---: | ---: | ---: |
-| [python/cpython](https://github.com/python/cpython) | 78,154 | +18 | 36,543 | 9,279 |
-| [pallets/flask](https://github.com/pallets/flask) | 75,085 | +10 | 17,291 | 4 |
-| [fastapi/fastapi](https://github.com/fastapi/fastapi) | 104,611 | +21 | 10,209 | 58 |
-| [astral-sh/ruff](https://github.com/astral-sh/ruff) | 51,152 | +22 | 2,643 | 2,281 |
+| [python/cpython](https://github.com/python/cpython) | 78,148 | -6 | 36,550 | 9,284 |
+| [pallets/flask](https://github.com/pallets/flask) | 75,076 | -9 | 17,306 | 4 |
+| [fastapi/fastapi](https://github.com/fastapi/fastapi) | 104,615 | +4 | 10,219 | 54 |
+| [astral-sh/ruff](https://github.com/astral-sh/ruff) | 51,151 | -1 | 2,645 | 2,285 |
 
 > Actualización generada **automáticamente** por GitHub Actions. No representa trabajo manual diario.
 
