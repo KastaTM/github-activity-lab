@@ -1,41 +1,41 @@
 {
-  "date_utc": "2026-11-14",
+  "date_utc": "2026-11-15",
   "automated": true,
   "repositories": [
     {
       "repo": "python/cpython",
-      "previous_date_utc": "2026-11-13",
+      "previous_date_utc": "2026-11-14",
       "changes": {
-        "stars": -4,
-        "forks": 7,
-        "open_issues_and_prs": 11
+        "stars": 10,
+        "forks": 9,
+        "open_issues_and_prs": 3
       }
     },
     {
       "repo": "pallets/flask",
-      "previous_date_utc": "2026-11-13",
+      "previous_date_utc": "2026-11-14",
       "changes": {
-        "stars": 4,
-        "forks": 10,
+        "stars": 17,
+        "forks": 8,
         "open_issues_and_prs": 0
       }
     },
     {
       "repo": "fastapi/fastapi",
-      "previous_date_utc": "2026-11-13",
+      "previous_date_utc": "2026-11-14",
       "changes": {
-        "stars": 22,
-        "forks": 5,
-        "open_issues_and_prs": 1
+        "stars": 27,
+        "forks": 37,
+        "open_issues_and_prs": 22
       }
     },
     {
       "repo": "astral-sh/ruff",
-      "previous_date_utc": "2026-11-13",
+      "previous_date_utc": "2026-11-14",
       "changes": {
-        "stars": -21,
-        "forks": 1,
-        "open_issues_and_prs": 5
+        "stars": 22,
+        "forks": 24,
+        "open_issues_and_prs": 3
       }
     }
   ]
