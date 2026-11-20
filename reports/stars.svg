@@ -1,22 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="432" viewBox="0 0 960 432" role="img" aria-label="Tendencias de estrellas en proyectos open source">
 <rect width="100%" height="100%" fill="#0d1117" rx="16"/>
 <text x="28" y="39" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#e6edf3">Open Source Radar</text>
-<text x="28" y="62" font-family="Arial,sans-serif" font-size="12" fill="#8b949e">Snapshots reales de GitHub · 2026-11-19</text>
+<text x="28" y="62" font-family="Arial,sans-serif" font-size="12" fill="#8b949e">Snapshots reales de GitHub · 2026-11-20</text>
 <text x="28" y="105" fill="#e6edf3" font-family="Arial,sans-serif" font-size="15">python/cpython</text>
-<text x="28" y="126" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">78,389 estrellas</text>
+<text x="28" y="126" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">78,440 estrellas</text>
 <line x1="335" y1="134" x2="905" y2="134" stroke="#30363d"/>
-<polyline points="335.0,124.0 357.8,123.6 380.6,123.3 403.4,124.5 426.2,124.1 449.0,126.0 471.8,124.7 494.6,123.7 517.4,122.9 540.2,122.5 563.0,121.0 585.8,119.2 608.6,115.6 631.4,113.0 654.2,111.8 677.0,110.8 699.8,110.2 722.6,110.4 745.4,109.0 768.2,108.2 791.0,108.3 813.8,108.0 836.6,107.4 859.4,98.0 882.2,103.0 905.0,101.9" fill="none" stroke="#58a6ff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="335.0,124.0 356.9,123.6 378.8,123.3 400.8,124.5 422.7,124.1 444.6,126.0 466.5,124.7 488.5,123.7 510.4,122.9 532.3,122.5 554.2,121.0 576.2,119.2 598.1,115.6 620.0,113.0 641.9,111.8 663.8,110.8 685.8,110.2 707.7,110.4 729.6,109.0 751.5,108.2 773.5,108.3 795.4,108.0 817.3,107.4 839.2,98.0 861.2,103.0 883.1,101.9 905.0,100.1" fill="none" stroke="#58a6ff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="28" y="183" fill="#e6edf3" font-family="Arial,sans-serif" font-size="15">pallets/flask</text>
-<text x="28" y="204" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">75,258 estrellas</text>
+<text x="28" y="204" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">75,299 estrellas</text>
 <line x1="335" y1="212" x2="905" y2="212" stroke="#30363d"/>
-<polyline points="335.0,197.3 357.8,193.3 380.6,192.4 403.4,204.0 426.2,203.5 449.0,203.9 471.8,199.5 494.6,189.1 517.4,188.6 540.2,203.1 563.0,202.8 585.8,201.8 608.6,200.4 631.4,195.2 654.2,194.9 677.0,194.4 699.8,193.7 722.6,194.3 745.4,192.6 768.2,192.0 791.0,191.8 813.8,190.7 836.6,190.2 859.4,176.0 882.2,183.3 905.0,182.5" fill="none" stroke="#3fb950" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="335.0,197.3 356.9,193.3 378.8,192.4 400.8,204.0 422.7,203.5 444.6,203.9 466.5,199.5 488.5,189.1 510.4,188.6 532.3,203.1 554.2,202.8 576.2,201.8 598.1,200.4 620.0,195.2 641.9,194.9 663.8,194.4 685.8,193.7 707.7,194.3 729.6,192.6 751.5,192.0 773.5,191.8 795.4,190.7 817.3,190.2 839.2,176.0 861.2,183.3 883.1,182.5 905.0,179.9" fill="none" stroke="#3fb950" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="28" y="261" fill="#e6edf3" font-family="Arial,sans-serif" font-size="15">fastapi/fastapi</text>
-<text x="28" y="282" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">104,904 estrellas</text>
+<text x="28" y="282" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">104,973 estrellas</text>
 <line x1="335" y1="290" x2="905" y2="290" stroke="#30363d"/>
-<polyline points="335.0,282.0 357.8,278.9 380.6,277.3 403.4,277.8 426.2,276.6 449.0,276.6 471.8,274.3 494.6,268.9 517.4,267.8 540.2,273.5 563.0,272.9 585.8,271.8 608.6,271.2 631.4,268.5 654.2,267.7 677.0,266.9 699.8,266.3 722.6,266.1 745.4,264.8 768.2,264.0 791.0,263.3 813.8,262.5 836.6,261.4 859.4,254.0 882.2,257.7 905.0,257.1" fill="none" stroke="#d2a8ff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="335.0,282.0 356.9,278.9 378.8,277.3 400.8,277.8 422.7,276.6 444.6,276.6 466.5,274.3 488.5,268.9 510.4,267.8 532.3,273.5 554.2,272.9 576.2,271.8 598.1,271.2 620.0,268.5 641.9,267.7 663.8,266.9 685.8,266.3 707.7,266.1 729.6,264.8 751.5,264.0 773.5,263.3 795.4,262.5 817.3,261.4 839.2,254.0 861.2,257.7 883.1,257.1 905.0,255.0" fill="none" stroke="#d2a8ff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="28" y="339" fill="#e6edf3" font-family="Arial,sans-serif" font-size="15">astral-sh/ruff</text>
-<text x="28" y="360" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">51,314 estrellas</text>
+<text x="28" y="360" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">51,325 estrellas</text>
 <line x1="335" y1="368" x2="905" y2="368" stroke="#30363d"/>
-<polyline points="335.0,360.0 357.8,359.3 380.6,358.8 403.4,358.4 426.2,358.1 449.0,358.3 471.8,357.8 494.6,357.4 517.4,357.0 540.2,356.7 563.0,356.1 585.8,355.7 608.6,353.7 631.4,346.1 654.2,340.0 677.0,339.0 699.8,338.4 722.6,338.5 745.4,336.9 768.2,336.0 791.0,336.5 813.8,335.9 836.6,336.7 859.4,332.0 882.2,335.7 905.0,334.5" fill="none" stroke="#f2cc60" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="335.0,360.0 356.9,359.3 378.8,358.8 400.8,358.4 422.7,358.1 444.6,358.3 466.5,357.8 488.5,357.4 510.4,357.0 532.3,356.7 554.2,356.1 576.2,355.7 598.1,353.7 620.0,346.1 641.9,340.0 663.8,339.0 685.8,338.4 707.7,338.5 729.6,336.9 751.5,336.0 773.5,336.5 795.4,335.9 817.3,336.7 839.2,332.0 861.2,335.7 883.1,334.5 905.0,334.2" fill="none" stroke="#f2cc60" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="28" y="415" fill="#8b949e" font-family="Arial,sans-serif" font-size="12">Datos generados automáticamente; cada repositorio usa su propia escala vertical.</text>
 </svg>
