@@ -1,31 +1,31 @@
 {
-  "date_utc": "2026-11-25",
+  "date_utc": "2026-11-26",
   "source": "https://api.github.com/repos/{owner}/{repo}",
   "automated": true,
   "repositories": [
     {
       "repo": "python/cpython",
-      "stars": 78436,
-      "forks": 36520,
-      "open_issues_and_prs": 9382
+      "stars": 78471,
+      "forks": 36534,
+      "open_issues_and_prs": 9370
     },
     {
       "repo": "pallets/flask",
-      "stars": 75270,
-      "forks": 17299,
+      "stars": 75293,
+      "forks": 17306,
       "open_issues_and_prs": 4
     },
     {
       "repo": "fastapi/fastapi",
-      "stars": 105022,
-      "forks": 10363,
+      "stars": 105057,
+      "forks": 10365,
       "open_issues_and_prs": 47
     },
     {
       "repo": "astral-sh/ruff",
-      "stars": 51515,
-      "forks": 2778,
-      "open_issues_and_prs": 2311
+      "stars": 51564,
+      "forks": 2786,
+      "open_issues_and_prs": 2314
     }
   ]
 }
